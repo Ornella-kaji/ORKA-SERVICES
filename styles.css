@@ -537,6 +537,10 @@ h3 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container h1{
+       padding-top: 5rem;
+
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
