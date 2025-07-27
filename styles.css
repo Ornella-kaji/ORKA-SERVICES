@@ -539,6 +539,7 @@ h3 {
 @media (max-width: 768px) {
     .container h1{
        padding-top: 5rem;
+       text-align: center;
 
     }
     .nav-menu {
