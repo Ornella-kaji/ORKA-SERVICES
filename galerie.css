@@ -286,6 +286,9 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+    .container h1 {
+        padding-top :10rem;
+    }
     .gallery-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         gap: 1.5rem;
@@ -325,6 +328,9 @@
 }
 
 @media (max-width: 480px) {
+    .container h1 {
+        padding-top :10rem;
+    }
     .gallery-grid {
         grid-template-columns: 1fr;
     }
