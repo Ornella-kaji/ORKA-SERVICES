@@ -287,7 +287,7 @@
 /* Responsive */
 @media (max-width: 768px) {
     .container h1 {
-        padding-top :2rem;
+        padding-top :3.5rem;
         text-align: center;
     }
     .gallery-grid {
@@ -330,7 +330,7 @@
 
 @media (max-width: 480px) {
     .container h1 {
-        padding-top :2rem;
+        padding-top :3.5rem;
         text-align: center;
     }
     .gallery-grid {
