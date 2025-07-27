@@ -287,8 +287,8 @@
 /* Responsive */
 @media (max-width: 768px) {
     .container h1 {
-        padding-top :5rem;
-        align-item: center;
+        padding-top :2rem;
+        text-align: center;
     }
     .gallery-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -330,8 +330,8 @@
 
 @media (max-width: 480px) {
     .container h1 {
-        padding-top :5rem;
-        align-item: center;
+        padding-top :2rem;
+        text-align: center;
     }
     .gallery-grid {
         grid-template-columns: 1fr;
