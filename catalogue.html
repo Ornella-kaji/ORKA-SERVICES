@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - ORKA SERVICES | Articles pour Événements à Kinshasa</title>
+    <meta name="description" content="Découvrez notre catalogue complet d'articles pour événements : robes de mariée, vaisselle élégante, décorations et faire-part de luxe à Kinshasa.">
+    <meta name="keywords" content="catalogue événement Kinshasa, robe mariée prix, vaisselle location, décoration mariage tarif">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="catalogue.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/orka_logo.jpg" alt="ORKA SERVICES Logo" class="logo-img">
+                    <span class="logo-text">ORKA SERVICES</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="catalogue.html" class="nav-link active">Catalogue</a></li>
+                    <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                    <li><a href="about.html" class="nav-link">À Propos</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="panier.html" class="nav-link cart-link">Panier (<span id="cart-count">0</span>)</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Notre Catalogue</h1>
+            <p>Découvrez notre sélection d'articles de luxe pour vos événements</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Tous les produits</button>
+                <button class="filter-btn" data-category="robes">Robes de mariée</button>
+                <button class="filter-btn" data-category="vaisselle">Vaisselle</button>
+                <button class="filter-btn" data-category="decoration">Décorations</button>
+                <button class="filter-btn" data-category="faire-part">Faire-part</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- Robes de mariée -->
+                <div class="product-card" data-category="robes">
+                    <div class="product-image">
+                        <img src="images/hxVzfRUSA4mb.jpg" alt="Robe de mariée élégante">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-product='{"id": 1, "name": "Robe de mariée élégante", "price": "Location: 150$", "image": "images/hxVzfRUSA4mb.jpg"}'>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Robe de mariée élégante</h3>
+                        <p class="product-price">Location: 150$ / Vente: 800$</p>
+                        <p class="product-description">Robe de mariée en satin avec traîne, parfaite pour un mariage de rêve.</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="robes">
+                    <div class="product-image">
+                        <img src="images/xenmJEa6RlZU.jpg" alt="Robe de mariée moderne">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-product='{"id": 2, "name": "Robe de mariée moderne", "price": "Location: 180$", "image": "images/xenmJEa6RlZU.jpg"}'>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Robe de mariée moderne</h3>
+                        <p class="product-price">Location: 180$ / Vente: 950$</p>
+                        <p class="product-description">Design moderne avec détails sophistiqués et coupe ajustée.</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="robes">
+                    <div class="product-image">
+                        <img src="images/9QsgxSt8Ppz1.jpg" alt="Robe de mariée princesse">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-product='{"id": 3, "name": "Robe de mariée princesse", "price": "Location: 200$", "image": "images/9QsgxSt8Ppz1.jpg"}'>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Robe de mariée princesse</h3>
+                        <p class="product-price">Location: 200$ / Vente: 1200$</p>
+                        <p class="product-description">Robe volumineuse style princesse avec broderies délicates.</p>
+                    </div>
+                </div>
+
+                <!-- Vaisselle -->
+                <div class="product-card" data-category="vaisselle">
+                    <div class="product-image">
+                        <img src="images/SA7mREBbKvEa.jpg" alt="Service assiettes dorées">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-product='{"id": 4, "name": "Service assiettes dorées (20 pièces)", "price": "Location: 80$", "image": "images/SA7mREBbKvEa.jpg"}'>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Service assiettes dorées (20 pièces)</h3>
+                        <p class="product-price">Location: 80$ / Vente: 300$</p>
+                        <p class="product-description">Assiettes élégantes avec bordure dorée pour 20 invités.</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="vaisselle">
+                    <div class="product-image">
+                        <img src="images/jFtXEHiXsTDd.jpg" alt="Couverts dorés luxe">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-product='{"id": 5, "name": "Couverts dorés luxe (60 pièces)", "price": "Location: 60$", "image": "images/jFtXEHiXsTDd.jpg"}'>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Couverts dorés luxe (60 pièces)</h3>
+                        <p class="product-price">Location: 60$ / Vente: 250$</p>
+                        <p class="product-description">Set complet de couverts dorés pour 20 personnes.</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="vaisselle">
+                    <div class="product-image">
+                        <img src="images/RnXZpkk45P8c.jpg" alt="Service de table complet">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-product='{"id": 6, "name": "Service de table complet blanc et doré", "price": "Location: 120$", "image": "images/RnXZpkk45P8c.jpg"}'>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Service de table complet blanc et doré</h3>
+                        <p class="product-price">Location: 120$ / Vente: 500$</p>
+                        <p class="product-description">Service complet avec assiettes, bols et accessoires assortis.</p>
+                    </div>
+                </div>
+
+                <!-- Décorations -->
+                <div class="product-card" data-category="decoration">
+                    <div class="product-image">
+                        <img src="images/Y6s1o1cqazBF.jpg" alt="Centre de table élégant">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-product='{"id": 7, "name": "Centre de table élégant", "price": "Location: 40$", "image": "images/Y6s1o1cqazBF.jpg"}'>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Centre de table élégant</h3>
+                        <p class="product-price">Location: 40$ / Vente: 150$</p>
+                        <p class="product-description">Arrangement floral sophistiqué avec chandelles.</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="decoration">
+                    <div class="product-image">
+                        <img src="images/t6jyfKOQkCzR.jpg" alt="Décoration de table mariage">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-product='{"id": 8, "name": "Décoration de table mariage", "price": "Location: 100$", "image": "images/t6jyfKOQkCzR.jpg"}'>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Décoration de table mariage</h3>
+                        <p class="product-price">Location: 100$ / Vente: 400$</p>
+                        <p class="product-description">Décoration complète pour table de mariage avec fleurs et accessoires.</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="decoration">
+                    <div class="product-image">
+                        <img src="images/5qvrcxfwGg9D.jpg" alt="Arche de cérémonie">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-product='{"id": 9, "name": "Arche de cérémonie", "price": "Location: 200$", "image": "images/5qvrcxfwGg9D.jpg"}'>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Arche de cérémonie</h3>
+                        <p class="product-price">Location: 200$ / Vente: 800$</p>
+                        <p class="product-description">Arche florale élégante pour cérémonie de mariage.</p>
+                    </div>
+                </div>
+
+                <!-- Faire-part -->
+                <div class="product-card" data-category="faire-part">
+                    <div class="product-image">
+                        <img src="images/ondMphnWsZgy.jpg" alt="Faire-part élégant">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-product='{"id": 10, "name": "Faire-part élégant (100 pièces)", "price": "Vente: 120$", "image": "images/ondMphnWsZgy.jpg"}'>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Faire-part élégant (100 pièces)</h3>
+                        <p class="product-price">Vente: 120$</p>
+                        <p class="product-description">Faire-part personnalisés avec design doré et finition luxe.</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="faire-part">
+                    <div class="product-image">
+                        <img src="images/Cm311x0uNINB.jpg" alt="Invitation bohème">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-product='{"id": 11, "name": "Invitation bohème (100 pièces)", "price": "Vente: 100$", "image": "images/Cm311x0uNINB.jpg"}'>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Invitation bohème (100 pièces)</h3>
+                        <p class="product-price">Vente: 100$</p>
+                        <p class="product-description">Style bohème chic avec éléments naturels et dorés.</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="faire-part">
+                    <div class="product-image">
+                        <img src="images/yhRxlC8HkMMM.jpg" alt="Faire-part pochette luxe">
+                        <div class="product-overlay">
+                            <button class="btn btn-primary add-to-cart" data-product='{"id": 12, "name": "Faire-part pochette luxe (100 pièces)", "price": "Vente: 180$", "image": "images/yhRxlC8HkMMM.jpg"}'>Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Faire-part pochette luxe (100 pièces)</h3>
+                        <p class="product-price">Vente: 180$</p>
+                        <p class="product-description">Faire-part pochette avec fleurs séchées et finition premium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ORKA SERVICES</h3>
+                    <p>Votre partenaire de confiance pour tous vos événements à Kinshasa.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="catalogue.html">Robes de mariée</a></li>
+                        <li><a href="catalogue.html">Vaisselle</a></li>
+                        <li><a href="catalogue.html">Décorations</a></li>
+                        <li><a href="catalogue.html">Faire-part</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Téléphone: +243 987 994 678</p>
+                    <p>Email: info@orkaservices.cd</p>
+                    <p>Kinshasa, RD Congo</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ORKA SERVICES. Tous droits réservés.</p>
+                <a href="mentions_legales.html">Mentions légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="catalogue.js"></script>
+</body>
+</html>
+

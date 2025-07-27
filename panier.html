@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier - ORKA SERVICES | Votre Commande</title>
+    <meta name="description" content="Consultez votre panier et finalisez votre commande avec ORKA SERVICES. Commande rapide via WhatsApp.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="panier.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/orka_logo.jpg" alt="ORKA SERVICES Logo" class="logo-img">
+                    <span class="logo-text">ORKA SERVICES</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="catalogue.html" class="nav-link">Catalogue</a></li>
+                    <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                    <li><a href="about.html" class="nav-link">À Propos</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="panier.html" class="nav-link cart-link active">Panier (<span id="cart-count">0</span>)</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Votre Panier</h1>
+            <p>Vérifiez vos articles et finalisez votre commande</p>
+        </div>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-content">
+                <!-- Empty Cart Message -->
+                <div id="empty-cart" class="empty-cart">
+                    <div class="empty-cart-icon">🛒</div>
+                    <h3>Votre panier est vide</h3>
+                    <p>Découvrez notre catalogue et ajoutez des articles à votre panier</p>
+                    <a href="catalogue.html" class="btn btn-primary">Voir le catalogue</a>
+                </div>
+
+                <!-- Cart Items -->
+                <div id="cart-items" class="cart-items" style="display: none;">
+                    <div class="cart-header">
+                        <h3>Articles dans votre panier</h3>
+                        <button id="clear-cart" class="btn-clear">Vider le panier</button>
+                    </div>
+                    
+                    <div id="items-list" class="items-list">
+                        <!-- Les articles seront ajoutés dynamiquement ici -->
+                    </div>
+
+                    <div class="cart-summary">
+                        <div class="summary-info">
+                            <p><strong>Total d'articles: <span id="total-items">0</span></strong></p>
+                            <p class="note">Les prix incluent la location ou la vente selon votre choix</p>
+                        </div>
+                        
+                        <div class="order-actions">
+                            <button id="order-whatsapp" class="btn btn-whatsapp">
+                                Commander via WhatsApp
+                            </button>
+                            <a href="catalogue.html" class="btn btn-secondary">Continuer mes achats</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Info -->
+    <section class="order-info">
+        <div class="container">
+            <h2>Comment passer commande ?</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Ajoutez vos articles</h4>
+                    <p>Parcourez notre catalogue et ajoutez les articles qui vous intéressent</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Vérifiez votre panier</h4>
+                    <p>Consultez les articles sélectionnés et leurs prix</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Commandez via WhatsApp</h4>
+                    <p>Cliquez sur "Commander" pour envoyer votre liste via WhatsApp</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>Confirmation</h4>
+                    <p>Nous confirmons la disponibilité et finalisons les détails</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ORKA SERVICES</h3>
+                    <p>Votre partenaire de confiance pour tous vos événements à Kinshasa.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="catalogue.html">Robes de mariée</a></li>
+                        <li><a href="catalogue.html">Vaisselle</a></li>
+                        <li><a href="catalogue.html">Décorations</a></li>
+                        <li><a href="catalogue.html">Faire-part</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Téléphone: +243 987 994 678</p>
+                    <p>Email: info@orkaservices.cd</p>
+                    <p>Kinshasa, RD Congo</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ORKA SERVICES. Tous droits réservés.</p>
+                <a href="mentions_legales.html">Mentions légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="panier.js"></script>
+</body>
+</html>
+

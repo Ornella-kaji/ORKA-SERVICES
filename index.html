@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORKA SERVICES - Location et Vente d'Articles pour Événements à Kinshasa</title>
+    <meta name="description" content="ORKA SERVICES, votre spécialiste en location et vente d'articles pour événements à Kinshasa. Robes de mariée, vaisselle élégante, décorations et faire-part de luxe.">
+    <meta name="keywords" content="location événement Kinshasa, robe mariée Kinshasa, vaisselle élégante, décoration mariage, faire-part luxe">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/orka_logo.jpg" alt="ORKA SERVICES Logo" class="logo-img">
+                    <span class="logo-text">ORKA SERVICES</span>
+                </div>
+                
+                <!-- Menu Desktop -->
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                    <li><a href="catalogue.html" class="nav-link">Catalogue</a></li>
+                    <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                    <li><a href="about.html" class="nav-link">À Propos</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="panier.html" class="nav-link cart-link">Panier (<span id="cart-count">0</span>)</a></li>
+                </ul>
+                
+                <!-- Menu Burger -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>ORKA SERVICES</h1>
+                <p class="hero-subtitle">Découvrez nos services d'exception</p>
+                <p class="hero-description">Spécialistes en location et vente d'articles pour événements à Kinshasa. Robes de mariée, vaisselle élégante, décorations et faire-part de luxe.</p>
+                <div class="hero-buttons">
+                    <a href="catalogue.html" class="btn btn-primary">Découvrir nos produits</a>
+                    <a href="contact.html" class="btn btn-secondary">Nous contacter</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hexagon-container">
+                    <div class="hexagon">
+                        <img src="images/hxVzfRUSA4mb.jpg" alt="Robe de mariée élégante">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="hexagon-small">
+                        <img src="images/xenmJEa6RlZU.jpg" alt="Robes de mariée">
+                    </div>
+                    <h3>Robes de Mariée</h3>
+                    <p>Collection exclusive de robes de mariée élégantes et raffinées pour votre jour J.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="hexagon-small">
+                        <img src="images/SA7mREBbKvEa.jpg" alt="Vaisselle élégante">
+                    </div>
+                    <h3>Vaisselle & Couverts</h3>
+                    <p>Vaisselle dorée et argentée haut de gamme pour vos événements d'exception.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="hexagon-small">
+                        <img src="images/Y6s1o1cqazBF.jpg" alt="Décorations">
+                    </div>
+                    <h3>Décorations</h3>
+                    <p>Décorations élégantes et personnalisées pour tous vos événements spéciaux.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="hexagon-small">
+                        <img src="images/ondMphnWsZgy.jpg" alt="Faire-part">
+                    </div>
+                    <h3>Faire-part & Invitations</h3>
+                    <p>Faire-part personnalisés et invitations de luxe pour annoncer vos événements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+        <div class="container">
+            <h2>Nos Réalisations</h2>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <img src="images/t6jyfKOQkCzR.jpg" alt="Décoration de mariage élégante">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/5qvrcxfwGg9D.jpg" alt="Table de mariage raffinée">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/mn1E52crrAwp.jpg" alt="Événement chic et élégant">
+                    </div>
+                </div>
+                <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+                <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Prêt à organiser votre événement de rêve ?</h2>
+            <p>Contactez-nous dès maintenant pour discuter de vos besoins</p>
+            <a href="https://wa.me/243987994678?text=Bonjour%20ORKA%20SERVICES%20👋%20Je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20services." class="btn btn-whatsapp">
+                Contacter via WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ORKA SERVICES</h3>
+                    <p>Votre partenaire de confiance pour tous vos événements à Kinshasa.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="catalogue.html">Robes de mariée</a></li>
+                        <li><a href="catalogue.html">Vaisselle</a></li>
+                        <li><a href="catalogue.html">Décorations</a></li>
+                        <li><a href="catalogue.html">Faire-part</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Téléphone: +243 987 994 678</p>
+                    <p>Email: info@orkaservices.cd</p>
+                    <p>Kinshasa, RD Congo</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ORKA SERVICES. Tous droits réservés.</p>
+                <a href="mentions_legales.html">Mentions légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

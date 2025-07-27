@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - ORKA SERVICES | Nos Réalisations d'Événements à Kinshasa</title>
+    <meta name="description" content="Découvrez nos plus belles réalisations d'événements à Kinshasa. Galerie photo de mariages, réceptions et célébrations organisés par ORKA SERVICES.">
+    <meta name="keywords" content="galerie événement Kinshasa, photos mariage, réalisations ORKA SERVICES, événements luxe">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="galerie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/orka_logo.jpg" alt="ORKA SERVICES Logo" class="logo-img">
+                    <span class="logo-text">ORKA SERVICES</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="catalogue.html" class="nav-link">Catalogue</a></li>
+                    <li><a href="galerie.html" class="nav-link active">Galerie</a></li>
+                    <li><a href="about.html" class="nav-link">À Propos</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="panier.html" class="nav-link cart-link">Panier (<span id="cart-count">0</span>)</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Notre Galerie</h1>
+            <p>Découvrez nos plus belles réalisations d'événements</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Tous</button>
+                <button class="filter-btn" data-category="mariages">Mariages</button>
+                <button class="filter-btn" data-category="receptions">Réceptions</button>
+                <button class="filter-btn" data-category="decorations">Décorations</button>
+                <button class="filter-btn" data-category="tables">Tables</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Mariages -->
+                <div class="gallery-item" data-category="mariages">
+                    <div class="gallery-image">
+                        <img src="images/t6jyfKOQkCzR.jpg" alt="Décoration de mariage élégante">
+                        <div class="gallery-overlay">
+                            <h3>Mariage Élégant</h3>
+                            <p>Décoration florale sophistiquée</p>
+                            <button class="view-btn" onclick="openLightbox('images/t6jyfKOQkCzR.jpg', 'Mariage Élégant', 'Décoration florale sophistiquée avec centres de table luxueux')">Voir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="mariages">
+                    <div class="gallery-image">
+                        <img src="images/5qvrcxfwGg9D.jpg" alt="Table de mariage raffinée">
+                        <div class="gallery-overlay">
+                            <h3>Table de Mariage</h3>
+                            <p>Mise en place raffinée</p>
+                            <button class="view-btn" onclick="openLightbox('images/5qvrcxfwGg9D.jpg', 'Table de Mariage', 'Table de mariage avec vaisselle dorée et décoration florale')">Voir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="mariages">
+                    <div class="gallery-image">
+                        <img src="images/mn1E52crrAwp.jpg" alt="Événement chic et élégant">
+                        <div class="gallery-overlay">
+                            <h3>Cérémonie Chic</h3>
+                            <p>Ambiance romantique</p>
+                            <button class="view-btn" onclick="openLightbox('images/mn1E52crrAwp.jpg', 'Cérémonie Chic', 'Cérémonie de mariage dans un cadre champêtre chic')">Voir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Réceptions -->
+                <div class="gallery-item" data-category="receptions">
+                    <div class="gallery-image">
+                        <img src="images/VoONo41eQAtg.jpeg" alt="Réception élégante">
+                        <div class="gallery-overlay">
+                            <h3>Réception de Luxe</h3>
+                            <p>Décoration événementielle</p>
+                            <button class="view-btn" onclick="openLightbox('images/VoONo41eQAtg.jpeg', 'Réception de Luxe', 'Réception élégante avec éclairage d\'ambiance')">Voir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="receptions">
+                    <div class="gallery-image">
+                        <img src="images/MbSxo9mKZRMI.jpg" alt="Événement corporatif">
+                        <div class="gallery-overlay">
+                            <h3>Événement Corporatif</h3>
+                            <p>Décoration professionnelle</p>
+                            <button class="view-btn" onclick="openLightbox('images/MbSxo9mKZRMI.jpg', 'Événement Corporatif', 'Décoration pour événement d\'entreprise')">Voir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="receptions">
+                    <div class="gallery-image">
+                        <img src="images/4LrSOYVxUtO0.jpeg" alt="Soirée de gala">
+                        <div class="gallery-overlay">
+                            <h3>Soirée de Gala</h3>
+                            <p>Ambiance festive</p>
+                            <button class="view-btn" onclick="openLightbox('images/4LrSOYVxUtO0.jpeg', 'Soirée de Gala', 'Décoration pour soirée de gala avec éclairage spectaculaire')">Voir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Décorations -->
+                <div class="gallery-item" data-category="decorations">
+                    <div class="gallery-image">
+                        <img src="images/z7EmhMMaP7kA.jpg" alt="Décoration de salle">
+                        <div class="gallery-overlay">
+                            <h3>Décoration de Salle</h3>
+                            <p>Transformation magique</p>
+                            <button class="view-btn" onclick="openLightbox('images/z7EmhMMaP7kA.jpg', 'Décoration de Salle', 'Transformation complète d\'une salle de réception')">Voir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="decorations">
+                    <div class="gallery-image">
+                        <img src="images/FFIwqcG1RYdn.jpg" alt="Suspension florale">
+                        <div class="gallery-overlay">
+                            <h3>Suspension Florale</h3>
+                            <p>Décoration aérienne</p>
+                            <button class="view-btn" onclick="openLightbox('images/FFIwqcG1RYdn.jpg', 'Suspension Florale', 'Décoration avec suspensions florales élégantes')">Voir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="decorations">
+                    <div class="gallery-image">
+                        <img src="images/3zF4Uqk4oWbD.webp" alt="Anniversaire chic">
+                        <div class="gallery-overlay">
+                            <h3>Anniversaire Chic</h3>
+                            <p>Décoration personnalisée</p>
+                            <button class="view-btn" onclick="openLightbox('images/3zF4Uqk4oWbD.webp', 'Anniversaire Chic', 'Décoration d\'anniversaire adulte élégante')">Voir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tables -->
+                <div class="gallery-item" data-category="tables">
+                    <div class="gallery-image">
+                        <img src="images/sUHsEExAvLX4.png" alt="Art de la table">
+                        <div class="gallery-overlay">
+                            <h3>Art de la Table</h3>
+                            <p>Vaisselle raffinée</p>
+                            <button class="view-btn" onclick="openLightbox('images/sUHsEExAvLX4.png', 'Art de la Table', 'Mise en place de table avec vaisselle élégante')">Voir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="tables">
+                    <div class="gallery-image">
+                        <img src="images/yBcyinltG96Y.jpg" alt="Table chic">
+                        <div class="gallery-overlay">
+                            <h3>Table Chic</h3>
+                            <p>Présentation soignée</p>
+                            <button class="view-btn" onclick="openLightbox('images/yBcyinltG96Y.jpg', 'Table Chic', 'Table dressée avec soin pour événement chic')">Voir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="tables">
+                    <div class="gallery-image">
+                        <img src="images/fnyBge0H34xN.webp" alt="Table d'hiver">
+                        <div class="gallery-overlay">
+                            <h3>Table d'Hiver</h3>
+                            <p>Élégance hivernale</p>
+                            <button class="view-btn" onclick="openLightbox('images/fnyBge0H34xN.webp', 'Table d\'Hiver', 'Décoration de table avec thème hivernal élégant')">Voir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+            <div class="lightbox-nav">
+                <button id="prev-image" class="nav-btn">❮</button>
+                <button id="next-image" class="nav-btn">❯</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Témoignages Clients</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"ORKA SERVICES a rendu notre mariage absolument magique. Leur attention aux détails et leur professionnalisme sont exceptionnels."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Marie & Jean</strong>
+                        <span>Mariage - Kinshasa</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Une équipe formidable qui a su transformer notre vision en réalité. La décoration était parfaite et nos invités étaient émerveillés."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Sarah Mukendi</strong>
+                        <span>Anniversaire - Kinshasa</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Service impeccable et produits de qualité. ORKA SERVICES est devenu notre partenaire de confiance pour tous nos événements."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Entreprise Kongo Ltd</strong>
+                        <span>Événements corporatifs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ORKA SERVICES</h3>
+                    <p>Votre partenaire de confiance pour tous vos événements à Kinshasa.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="catalogue.html">Robes de mariée</a></li>
+                        <li><a href="catalogue.html">Vaisselle</a></li>
+                        <li><a href="catalogue.html">Décorations</a></li>
+                        <li><a href="catalogue.html">Faire-part</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Téléphone: +243 987 994 678</p>
+                    <p>Email: info@orkaservices.cd</p>
+                    <p>Kinshasa, RD Congo</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ORKA SERVICES. Tous droits réservés.</p>
+                <a href="mentions_legales.html">Mentions légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="galerie.js"></script>
+</body>
+</html>
+

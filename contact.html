@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ORKA SERVICES | Nous Contacter à Kinshasa</title>
+    <meta name="description" content="Contactez ORKA SERVICES à Kinshasa pour vos événements. Téléphone, WhatsApp, formulaire de contact. Devis gratuit et conseils personnalisés.">
+    <meta name="keywords" content="contact ORKA SERVICES, téléphone Kinshasa, WhatsApp événement, devis gratuit, conseil mariage RDC">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/orka_logo.jpg" alt="ORKA SERVICES Logo" class="logo-img">
+                    <span class="logo-text">ORKA SERVICES</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="catalogue.html" class="nav-link">Catalogue</a></li>
+                    <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                    <li><a href="about.html" class="nav-link">À Propos</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li><a href="panier.html" class="nav-link cart-link">Panier (<span id="cart-count">0</span>)</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contactez-Nous</h1>
+            <p>Nous sommes là pour réaliser vos rêves d'événements</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Nos Coordonnées</h2>
+                    <p class="contact-intro">Contactez-nous dès maintenant pour discuter de votre projet. Notre équipe est à votre disposition pour vous conseiller et vous accompagner.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-details">
+                                <h3>Téléphone</h3>
+                                <p><a href="tel:+243987994678">+243 987 994 678</a></p>
+                                <span>Lundi - Samedi: 8h - 18h</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">💬</div>
+                            <div class="method-details">
+                                <h3>WhatsApp</h3>
+                                <p><a href="https://wa.me/243987994678" target="_blank">+243 987 994 678</a></p>
+                                <span>Réponse rapide 24h/24</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">✉️</div>
+                            <div class="method-details">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@orkaservices.cd">info@orkaservices.cd</a></p>
+                                <span>Réponse sous 24h</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-details">
+                                <h3>Adresse</h3>
+                                <p>Kinshasa, République Démocratique du Congo</p>
+                                <span>Sur rendez-vous uniquement</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="whatsapp-cta">
+                        <h3>Commande Rapide</h3>
+                        <p>Pour une réponse immédiate, contactez-nous directement via WhatsApp :</p>
+                        <a href="https://wa.me/243987994678?text=Bonjour%20ORKA%20SERVICES%20👋%20Je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20services." class="btn btn-whatsapp" target="_blank">
+                            Contacter via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Envoyez-nous un Message</h2>
+                    <form id="contact-form" class="form">
+                        <div class="form-group">
+                            <label for="name">Nom Complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="event-type">Type d'Événement</label>
+                            <select id="event-type" name="event-type">
+                                <option value="">Sélectionnez un type</option>
+                                <option value="mariage">Mariage</option>
+                                <option value="anniversaire">Anniversaire</option>
+                                <option value="corporate">Événement Corporatif</option>
+                                <option value="bapteme">Baptême</option>
+                                <option value="reception">Réception</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="event-date">Date Prévue</label>
+                            <input type="date" id="event-date" name="event-date">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">Nombre d'Invités</label>
+                            <input type="number" id="guests" name="guests" min="1" placeholder="Ex: 50">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Budget Approximatif (USD)</label>
+                            <select id="budget" name="budget">
+                                <option value="">Sélectionnez une fourchette</option>
+                                <option value="500-1000">500$ - 1,000$</option>
+                                <option value="1000-2500">1,000$ - 2,500$</option>
+                                <option value="2500-5000">2,500$ - 5,000$</option>
+                                <option value="5000+">Plus de 5,000$</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Décrivez votre Projet *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Décrivez-nous votre vision, vos besoins spécifiques, vos préférences..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Je souhaite recevoir des informations sur vos nouveautés et offres spéciales
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Envoyer le Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Questions Fréquentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Combien de temps à l'avance dois-je réserver ?</h3>
+                    <p>Nous recommandons de nous contacter au moins 2-3 mois à l'avance pour les mariages et 1 mois pour les autres événements. Cependant, nous pouvons souvent accommoder des demandes de dernière minute.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Proposez-vous des devis gratuits ?</h3>
+                    <p>Oui, tous nos devis sont gratuits et sans engagement. Contactez-nous avec les détails de votre événement et nous vous fournirons une estimation détaillée.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Livrez-vous partout à Kinshasa ?</h3>
+                    <p>Oui, nous livrons et installons nos équipements dans toute la ville de Kinshasa. Des frais de transport peuvent s'appliquer selon la distance.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Puis-je personnaliser les décorations ?</h3>
+                    <p>Absolument ! Nous travaillons avec vous pour créer des décorations qui reflètent votre style et vos préférences. Chaque événement est unique.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Quels sont vos modes de paiement ?</h3>
+                    <p>Nous acceptons les paiements en espèces, par virement bancaire et mobile money. Un acompte est généralement demandé à la réservation.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Que se passe-t-il en cas d'annulation ?</h3>
+                    <p>Nos conditions d'annulation varient selon le type d'événement et le délai. Contactez-nous pour connaître les détails de notre politique d'annulation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Placeholder) -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Notre Zone de Service</h2>
+            <div class="map-placeholder">
+                <div class="map-content">
+                    <h3>🗺️ Kinshasa et Environs</h3>
+                    <p>Nous intervenons dans toute la ville de Kinshasa et ses communes :</p>
+                    <ul>
+                        <li>Gombe</li>
+                        <li>Kinshasa</li>
+                        <li>Barumbu</li>
+                        <li>Lingwala</li>
+                        <li>Kasa-Vubu</li>
+                        <li>Kalamu</li>
+                        <li>Makala</li>
+                        <li>Ngiri-Ngiri</li>
+                        <li>Kintambo</li>
+                        <li>Lemba</li>
+                        <li>Limete</li>
+                        <li>Matete</li>
+                        <li>Ngaba</li>
+                        <li>Kisenso</li>
+                        <li>Bandalungwa</li>
+                        <li>Bumbu</li>
+                        <li>Makala</li>
+                        <li>Selembao</li>
+                        <li>Mont-Ngafula</li>
+                        <li>Ngaliema</li>
+                        <li>Masina</li>
+                        <li>Ndjili</li>
+                        <li>Kimbanseke</li>
+                        <li>Maluku</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ORKA SERVICES</h3>
+                    <p>Votre partenaire de confiance pour tous vos événements à Kinshasa.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="catalogue.html">Robes de mariée</a></li>
+                        <li><a href="catalogue.html">Vaisselle</a></li>
+                        <li><a href="catalogue.html">Décorations</a></li>
+                        <li><a href="catalogue.html">Faire-part</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Téléphone: +243 987 994 678</p>
+                    <p>Email: info@orkaservices.cd</p>
+                    <p>Kinshasa, RD Congo</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ORKA SERVICES. Tous droits réservés.</p>
+                <a href="mentions_legales.html">Mentions légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
+
